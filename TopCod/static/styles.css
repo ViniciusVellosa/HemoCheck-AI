@@ -1,0 +1,179 @@
+/* Definição da fonte */
+@font-face {
+  font-family: "MinhaFonte";
+  src: url("font/nasalization/nasalization-rg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Aplicar a fonte apenas ao h1 */
+h1 {
+  font-family: "MinhaFonte", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url(image/AI-diagnostics-3.jpg);
+  background-size: cover;
+  backdrop-filter: blur(5px);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.header h1 {
+  margin: 0;
+  color: #ff1511;
+  font-size: 3em;
+  text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.2);
+}
+
+.header p {
+  color: #ffffff;
+  font-size: 1.2em;
+  line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.background-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 500px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container input[type="file"] {
+  display: none;
+}
+
+/* Customiza o label  do input */
+.container label[for="pdfFile"] {
+  background-color: #e53935;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: inline-flex;
+  align-items: center;
+}
+
+.container label[for="pdfFile"]:hover {
+  background-color: #c62828;
+  transform: scale(1.05);
+}
+
+/* Customização do ícone PDF */
+.pdf-icon {
+  margin-right: 10px;
+  display: none;
+}
+
+/* Estiliza o texto ao lado do botão de upload */
+.file-name {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.container input[type="submit"] {
+  background-color: #e53935;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+.container input[type="submit"]:hover {
+  background-color: #c62828;
+  transform: scale(1.05);
+}
+
+/* Estilo da "box" que exibe o resultado */
+.result-box {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  max-height: 300px;
+  overflow-y: auto;
+  white-space: pre-wrap; /* Para preservar quebras de linha */
+}
+
+.footer {
+  background: #ffffff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  position: absolute;
+  bottom: 0;
+}
+
+.notification {
+  display: none;
+  padding: 10px;
+  border-radius: 5px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: #fff;
+}
+
+.notification.success {
+  background-color: #28a745;
+}
+
+.notification.error {
+  background-color: #dc3545;
+}

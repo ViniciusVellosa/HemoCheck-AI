@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HemoCheck AI</title>
+    <link rel="shortcut icon" href="icon/blod icon.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+    <div class="header">
+        <h1 class="box">HemoCheck AI</h1>
+        <p class="box">
+            <strong>
+                HemoCheck AI tem como objetivo analisar um exame de sangue e assim
+                detectar alterações no sangue e mostrar ao usuário o diagnóstico de
+                uma ampla gama de condições, incluindo infecções, anemias, distúrbios
+                hormonais, doenças cardiovasculares, diabetes, problemas de
+                coagulação, câncer, entre outras. Além de auxiliar na prevenção de
+                doenças e também facilitar o monitoramento da condição de saúde, para
+                pacientes com doenças crônicas.
+            </strong>
+        </p>
+    </div>
+
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="container">
+            <h2>HemoCheck AI</h2>
+            <form id="uploadForm" action="/process" method="post" enctype="multipart/form-data">
+                <label for="pdfFile">
+                    <img
+                        src="https://img.icons8.com/material-outlined/24/ffffff/pdf.png"
+                        class="pdf-icon"
+                        alt="PDF Icon"
+                    />
+                    Selecione seu exame de sangue
+                </label>
+                <span class="file-name"></span>
+                <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" required />
+                <input type="submit" value="Enviar" />
+            </form>
+            <div id="loading" style="display: none;">Carregando...</div>
+            <div id="result" class="result-box"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
