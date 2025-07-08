@@ -13,26 +13,26 @@
 
 ## 📄 Descrição
 
-[cite_start]O HemoCheck AI é um sistema web projetado para processar exames de sangue em formato PDF, fornecendo relatórios de saúde detalhados com base em análises automatizadas de Inteligência Artificial. [cite: 17] [cite_start]O objetivo é permitir que usuários façam o upload de seus exames e obtenham uma análise rápida e precisa sobre possíveis condições de saúde. [cite: 15]
+O HemoCheck AI é um sistema web projetado para processar exames de sangue em formato PDF, fornecendo relatórios de saúde detalhados com base em análises automatizadas de Inteligência Artificial. O objetivo é permitir que usuários façam o upload de seus exames e obtenham uma análise rápida e precisa sobre possíveis condições de saúde.
 
 
 ## 🚀 Funcionalidades Principais
 
-* [cite_start]**Upload de Exames:** Interface intuitiva para o envio de arquivos de exames em formato PDF. [cite: 24]
-* [cite_start]**Extração de Dados com OCR:** Utiliza tecnologia OCR para extrair as informações relevantes e os valores do exame de forma automatizada. [cite: 24]
-* [cite_start]**Análise com IA:** Integração com a API do GPT-4 da OpenAI para analisar os dados extraídos e compará-los com valores de referência. [cite: 24]
-* [cite_start]**Geração de Relatórios:** Cria um relatório detalhado e de fácil compreensão para o usuário, com possíveis riscos e recomendações. [cite: 25]
+* **Upload de Exames:** Interface intuitiva para o envio de arquivos de exames em formato PDF.
+* **Extração de Dados com OCR:** Utiliza tecnologia OCR para extrair as informações relevantes e os valores do exame de forma automatizada.
+* **Análise com IA:** Integração com a API do GPT-4 da OpenAI para analisar os dados extraídos e compará-los com valores de referência.
+* **Geração de Relatórios:** Cria um relatório detalhado e de fácil compreensão para o usuário, com possíveis riscos e recomendações.
 
 ## 🛠️ Tecnologias Utilizadas
 
 O projeto foi construído utilizando as seguintes tecnologias:
 
-* [cite_start]**Front-end:** HTML, CSS, JavaScript [cite: 26]
-* [cite_start]**Back-end:** Python com o framework Flask para o gerenciamento do servidor e da comunicação. [cite: 26]
+* **Front-end:** HTML, CSS, JavaScript
+* **Back-end:** Python com o framework Flask para o gerenciamento do servidor e da comunicação.
 * **Bibliotecas Principais:**
-    * [cite_start]`pdf2image`: Para converter as páginas do PDF em imagens. [cite: 27]
-    * [cite_start]`Pytesseract`: Para realizar o OCR nas imagens e extrair o texto. [cite: 27]
-    * [cite_start]`OpenAI API`: Para enviar os dados extraídos e receber a análise inteligente. [cite: 27]
+    * `pdf2image`: Para converter as páginas do PDF em imagens.
+    * `Pytesseract`: Para realizar o OCR nas imagens e extrair o texto.
+    * `OpenAI API`: Para enviar os dados extraídos e receber a análise inteligente.
     * `python-dotenv`: Para gerenciamento seguro de chaves de API.
 
 ## ⚙️ Como Executar o Projeto Localmente
@@ -75,12 +75,12 @@ Para executar o HemoCheck AI no seu ambiente local, siga os passos abaixo:
 
 Este projeto foi desenvolvido como parte de um trabalho acadêmico por uma equipe talentosa de estudantes de Engenharia da Computação:
 
-* [cite_start]Eduardo Da Cruz Barbosa (Front-end DEV) [cite: 19]
-* [cite_start]Gustavo Henrique Femiano (Full-Stack DEV) [cite: 19]
-* [cite_start]Jean Domiciano De Menezes (Back-end DEV) [cite: 20]
-* [cite_start]João Pedro Marucci Pagliuso (Back-end DEV) [cite: 21]
-* [cite_start]**Vinicius Gussoni Vellosa (Full-Stack DEV)** [cite: 22]
-* [cite_start]Yasmim Fernandes (Back-end DEV, Analista de Sistemas) [cite: 22]
+* Eduardo Da Cruz Barbosa (Front-end DEV)
+* Gustavo Henrique Femiano (Full-Stack DEV)
+* Jean Domiciano De Menezes (Back-end DEV)
+* João Pedro Marucci Pagliuso (Back-end DEV)
+* **Vinicius Gussoni Vellosa (Full-Stack DEV)**
+* Yasmim Fernandes (Back-end DEV, Analista de Sistemas)
 
 ## ⚖️ Licença
 
