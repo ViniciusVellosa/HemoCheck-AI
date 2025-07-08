@@ -1,7 +1,7 @@
 # HemoCheck AI - Análise Inteligente de Exames de Sangue
 
 <p align="center">
-  <img src="[HemoCheck-AI](https://github.com/user-attachments/assets/8751db8b-4180-46da-9ca9-70fc49dc8581)" alt="Imagem do Projeto HemoCheck AI" width="600"/>
+  <img src="https://github.com/user-attachments/assets/8751db8b-4180-46da-9ca9-70fc49dc8581" alt="Imagem do Projeto HemoCheck AI" width="600"/>
 </p>
 
 <p align="center">
